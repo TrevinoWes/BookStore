@@ -19,7 +19,10 @@ using namespace std;
 //	Declare all function prototypes here
 //============================================================================================================================
 
-void showMenu();
+void showMenu(vector<Cashier> inv, const double tax);
+int searchMenu(vector<Cashier> inventory);
+void changeMenu(int book, vector<Cashier> inventory);
+void printMenu(vector<Cashier> inventory);
 
 const double TAX = .0785;
 
@@ -79,6 +82,7 @@ void showMenu(vector<Cashier> inv, const double tax)
 			book = searchMenu(inv);
 			cout <<  "In Stock: " << inv[book].getBookunits() << endl;
 			cout << "Cost: " << inv[book].getRetail() << endl; 
+			cin >> amount;
 
 			while(!isdigit(amount))
 			{
@@ -129,6 +133,7 @@ void showMenu(vector<Cashier> inv, const double tax)
 			printMenu(inv);
 			break;
 		default:
+			cout << choice << " is not an option" << endl;
 	}
 }
 

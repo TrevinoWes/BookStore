@@ -27,23 +27,23 @@ public:
 	void addBook(vector<Cashier> books);
 	void addContents(fstream &, string);
 	//sort functions
-	void sortIsbn(vector<Cashier>, static int arraySize);
-	void sortTitle(vector<Cashier>, static int arraySize);
-	void sortAuthor(vector<Cashier>, static int arraySize);
-	void sortPublisher(vector<Cashier>, static int arraySize);
-	void sortDate(vector<Cashier>, static int arraySize);
-	void sortUnits(vector<Cashier>, static int arraySize);
-	void sortWholesale(vector<Cashier>, static int arraySize);
-	void sortRetail(vector<Cashier>, static int arraySize);
+	void sortIsbn(vector<Cashier>, int arraySize);
+	void sortTitle(vector<Cashier>, int arraySize);
+	void sortAuthor(vector<Cashier>, int arraySize);
+	void sortPublisher(vector<Cashier>, int arraySize);
+	void sortDate(vector<Cashier>, int arraySize);
+	void sortUnits(vector<Cashier>, int arraySize);
+	void sortWholesale(vector<Cashier>, int arraySize);
+	void sortRetail(vector<Cashier>, int arraySize);
 	//search functions
-	int searchIsbn(vector<Cashier>, static int numElems, string value);
-	int searchTitle(vector<Cashier>, static int numElems, string value);
-	int searchAuthor(vector<Cashier>, static int numElems, string value);
-	int searchPublisher(vector<Cashier>, static int numElems, string value);
-	int searchDate(vector<Cashier>, static int numElems, string value);
-	int searchUnits(vector<Cashier>, static int numElems, int value);
-	int searchWholesale(vector<Cashier>, static int numElems, double value);
-	int searchRetail(vector<Cashier>, static int numElems, double value);
+	int searchIsbn(vector<Cashier>, int numElems, string value);
+	int searchTitle(vector<Cashier>, int numElems, string value);
+	int searchAuthor(vector<Cashier>, int numElems, string value);
+	int searchPublisher(vector<Cashier>, int numElems, string value);
+	int searchDate(vector<Cashier>, int numElems, string value);
+	int searchUnits(vector<Cashier>, int numElems, int value);
+	int searchWholesale(vector<Cashier>, int numElems, double value);
+	int searchRetail(vector<Cashier>, int numElems, double value);
 };
 
 #endif

@@ -68,8 +68,8 @@ public:
 	int getCount() const;
 
 	// Friends Overload operator << and >> prototypes
-	virtual friend ostream &operator << (ostream &, const Book &);
-	virtual friend istream &operator >> (istream &, Book &);
+	friend ostream &operator << (ostream &, const Book &);
+	friend istream &operator >> (istream &, Book &);
 
 	//	Create inventory of Books
 	virtual void inventory(vector<Book>);
@@ -84,23 +84,23 @@ public:
 	virtual void addBook(vector<Book> books);
 	virtual void addContents(fstream &, string);
 	//sort functions
-	virtual void sortIsbn(vector<Book>, static int arraySize);
-	virtual void sortTitle(vector<Book>, static int arraySize);
-	virtual void sortAuthor(vector<Book>, static int arraySize);
-	virtual void sortPublisher(vector<Book>, static int arraySize);
-	virtual void sortDate(vector<Book>, static int arraySize);
-	virtual void sortUnits(vector<Book>, static int arraySize);
-	virtual void sortWholesale(vector<Book>, static int arraySize);
-	virtual void sortRetail(vector<Book>, static int arraySize);
+	virtual void sortIsbn(vector<Book>, int arraySize);
+	virtual void sortTitle(vector<Book>, int arraySize);
+	virtual void sortAuthor(vector<Book>, int arraySize);
+	virtual void sortPublisher(vector<Book>, int arraySize);
+	virtual void sortDate(vector<Book>, int arraySize);
+	virtual void sortUnits(vector<Book>, int arraySize);
+	virtual void sortWholesale(vector<Book>, int arraySize);
+	virtual void sortRetail(vector<Book>, int arraySize);
 	//search functions
-	virtual int searchIsbn(vector<Book>, static int numElems, string value);
-	virtual int searchTitle(vector<Book>, static int numElems, string value);
-	virtual int searchAuthor(vector<Book>, static int numElems, string value);
-	virtual int searchPublisher(vector<Book>, static int numElems, string value);
-	virtual int searchDate(vector<Book>, static int numElems, string value);
-	virtual int searchUnits(vector<Book>, static int numElems, int value);
-	virtual int searchWholesale(vector<Book>, static int numElems, double value);
-	virtual int searchRetail(vector<Book>, static int numElems, double value);
+	virtual int searchIsbn(vector<Book>, int numElems, string value);
+	virtual int searchTitle(vector<Book>, int numElems, string value);
+	virtual int searchAuthor(vector<Book>, int numElems, string value);
+	virtual int searchPublisher(vector<Book>, int numElems, string value);
+	virtual int searchDate(vector<Book>, int numElems, string value);
+	virtual int searchUnits(vector<Book>, int numElems, int value);
+	virtual int searchWholesale(vector<Book>, int numElems, double value);
+	virtual int searchRetail(vector<Book>, int numElems, double value);
 
 	virtual void purchase(int, double);
 

@@ -357,7 +357,7 @@ void Cashier::sortUnits(vector<Cashier> Array, int arraySize)
 	}
 
 	int startScan, minIndex;
-	Book minValue;
+	Cashier minValue;
 
 	for (startScan = 0; startScan < (arraySize - 1); startScan++)
 	{
