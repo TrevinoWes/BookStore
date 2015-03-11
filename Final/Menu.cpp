@@ -31,7 +31,7 @@ const double TAX = .0785;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 int main()
 {
-	vector<Cashier> inventory;
+	vector<Cashier> inventory(1);
 
 	inventory[0].inventory(inventory);
 
@@ -69,7 +69,7 @@ void showMenu(vector<Cashier> inv, const double tax)
 
 	cin >> choice;
 
-	while (choice > 0 && choice < 5)
+	while (choice < 0 && choice > 5)
 	{
 		cout << "     Invalid choice." << endl;
 		cout << endl << "     Enter your choice: ";

@@ -25,7 +25,6 @@ public:
 	void ReadContents(fstream &, vector<Cashier>);		
 	//	Add new Title into Book's list
 	void addBook(vector<Cashier> books);
-	void addContents(fstream &, string);
 	//sort functions
 	void sortIsbn(vector<Cashier>, int arraySize);
 	void sortTitle(vector<Cashier>, int arraySize);

@@ -82,7 +82,6 @@ public:
 	virtual void ReadContents(fstream &, vector<Book>);		
 	//	Add new Title into Book's list
 	virtual void addBook(vector<Book> books);
-	virtual void addContents(fstream &, string);
 	//sort functions
 	virtual void sortIsbn(vector<Book>, int arraySize);
 	virtual void sortTitle(vector<Book>, int arraySize);
@@ -101,9 +100,6 @@ public:
 	virtual int searchUnits(vector<Book>, int numElems, int value);
 	virtual int searchWholesale(vector<Book>, int numElems, double value);
 	virtual int searchRetail(vector<Book>, int numElems, double value);
-
-	virtual void purchase(int, double);
-
 	virtual void remove(int);
 	//	No need to use displayBooks member funtion because I do oveloaded operator << and >>
 	//	Display member function
